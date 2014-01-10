@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="OpenTK">
-      <HintPath>..\packages\OpenTK.1.1.1456.5398\lib\NET40\OpenTK.dll</HintPath>
+      <HintPath>packages\OpenTK.1.1.1456.5398\lib\NET40\OpenTK.dll</HintPath>
     </Reference>
     <Reference Include="OpenTK.GLControl">
-      <HintPath>..\packages\OpenTK.GLControl.1.1.1456.5398\lib\NET40\OpenTK.GLControl.dll</HintPath>
+      <HintPath>packages\OpenTK.GLControl.1.1.1456.5398\lib\NET40\OpenTK.GLControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

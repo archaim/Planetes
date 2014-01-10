@@ -63,6 +63,7 @@ namespace Planetes
             GL.MatrixMode(MatrixMode.Modelview);
             GL.LoadMatrix(ref modelview);
             GL.Translate(0.0f, 0.0f, 5.0f);
+            GL.Rotate(trackBar_Rotation.Value, 0.0f, 1.0f, 0.0f);
 
             GL.Color3(Color.Blue);
             GL.PolygonMode(MaterialFace.Front, PolygonMode.Fill);
@@ -82,6 +83,11 @@ namespace Planetes
         }
 
         private void trackBar_levelOfDetail_ValueChanged(object sender, EventArgs e)
+        {
+            glControl.Refresh();
+        }
+
+        private void trackBar_Rotation_ValueChanged(object sender, EventArgs e)
         {
             glControl.Refresh();
         }
